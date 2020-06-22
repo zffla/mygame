@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    android:id="@+id/rl_game">
+
+    <LinearLayout
+        android:id="@+id/ll_game_info_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_size"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步数："
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/tv_step_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="时间："
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_size"
+            android:text="s"
+            android:textSize="@dimen/title_size" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_game_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_game_info_show"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_size"/>
+
+    <LinearLayout
+        android:id="@+id/ll_game_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gv_game_pic"
+        android:layout_margin="@dimen/margin_size"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_game_origin_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_select"
+            android:text="原图"
+            android:textSize="@dimen/type_size" />
+
+        <Button
+            android:id="@+id/btn_game_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:background="@drawable/btn_select"
+            android:text="重置"
+            android:textSize="@dimen/type_size" />
+
+        <Button
+            android:id="@+id/btn_game_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btn_margin"
+            android:background="@drawable/btn_select"
+            android:text="返回"
+            android:textSize="@dimen/type_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>
