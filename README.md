@@ -1,6 +1,13 @@
 # Puzzle-Game
 简单的拼图游戏，可选难度2x2、3x3、4x4，支持拍照和从本地图库选择图片。
 ## 界面展示
+### 选择图片
+<img src="https://github.com/zffla/mygame/blob/master/index.jpg" width=30%/>  <img src="https://github.com/zffla/mygame/blob/master/select-photo.jpg" width=30%/>
+
+### 游戏界面
+<img src="https://github.com/zffla/mygame/blob/master/game-2.jpg" width=30%/> <img src="https://github.com/zffla/mygame/blob/master/game-3.jpg" width=30%/> <img src="https://github.com/zffla/mygame/blob/master/game-4.jpg" width=30%/>
+
+<img src="https://github.com/zffla/mygame/blob/master/succeed.jpg" width=30%/>
 
 ## 具体实现
 ### 图片切分
